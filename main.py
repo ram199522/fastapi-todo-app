@@ -6,8 +6,8 @@ from tasks.delete_request import router as delete_router
 app = FastAPI()
 
 # Include all routers
-app.include_router(post_router)#This is post_router
-app.include_router(get_router)
-app.include_router(put_router)
-app.include_router(delete_router)
+app.include_router(post_router)#This is post_router for post_request file
+app.include_router(get_router)#This is get_router for get_request file
+app.include_router(put_router)#This is Put_router for Put_request file
+app.include_router(delete_router)#This is delete_router for delete_request file
 
